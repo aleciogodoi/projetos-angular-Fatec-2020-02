@@ -1,7 +1,6 @@
 # projetos-angular-Fatec-2020-02
 <br>
 <h2>Para clonar o projeto a partir do arquivo ZIP</h2> 
-
 1. Selecione o botão verde Code -> Download ZIP
 2. Copie o arquivo ZIP para pasta de sua preferência e descompacte o arquivo
 3. No prompt de comando do Windows (cmd) vá até a pasta "primeiro-projeto"
