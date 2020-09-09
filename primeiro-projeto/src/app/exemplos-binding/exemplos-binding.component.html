@@ -1,0 +1,87 @@
+<table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>Tipo de Binding</th>
+        <th>descrição</th>
+        <th>Exemplo</th>
+        <th>Two way data binding - comparação</th>
+      </tr>
+    </thead>
+    <tr>
+      <th>Interpolation</th>
+      <td> {{'{{'}}model.nome}}
+        <br /> exibe o valor da proriedade</td>
+      <td>{{model.nome}}</td>
+      <td>
+        <input [(ngModel)]="model.nome" type="text" class="form-control" />
+      </td>
+    </tr>
+    <tr>
+      <th>Attribute Binding
+        <br />
+        <i>"similar aos colchetes"</i>
+      </th>
+      <td> value="{{'{{'}}model.email}}"
+        <br /> altera o valor do elemento, mas não altera a model</td>
+      <td>
+        <input name="email" value="{{model.email}}" type="text" class="form-control" />
+      </td>
+      <td>
+        <input [(ngModel)]="model.email" type="text" class="form-control" />
+      </td>
+    </tr>
+    <tr>
+      <th>Attribute binding
+        <br />colchetes</th>
+      <td>[value]="model.email"
+        <br /> altera o valor do elemento, mas não altera a model</td>
+      <td>
+        <input name="email" [value]="model.email" type="text" class="form-control" />
+      </td>
+      <td>
+        <input [(ngModel)]="model.email" type="text" class="form-control" />
+      </td>
+    </tr>
+    <tr>
+      <th>Event binding</th>
+      <td>[(ngModel)]="model.skype"
+        <br /> altera a model, mas não altera o componente</td>
+      <td>
+        <input (input)="model.skype=$event.target.value" type="text" class="form-control" />
+      </td>
+      <td>
+        <input [(ngModel)]="model.skype" type="text" class="form-control" />
+      </td>
+    </tr>
+    <tr>
+      <th>Two way data binding
+        <br />(event + attribute binding)</th>
+      <td>(input)="model.site=$event.target.value [value]="model.site"
+        <br />altera o valor do componente e a model</td>
+      <td>
+        <input [value]="model.site" (input)="model.site=$event.target.value" type="text" class="form-control" />
+      </td>
+      <td>
+        <input [(ngModel)]="model.site" type="text" class="form-control">
+      </td>
+    </tr>
+    <tr>
+      <th>Two way data binding ngModel</th>
+      <td>[(ngModel)]="model.site"
+        <br />altera o valor do componente e a model</td>
+      <td>
+        <input [(ngModel)]="model.site" type="text" class="form-control">
+      </td>
+      <td>
+        <input [(ngModel)]="model.site" type="text" class="form-control">
+      </td>
+    </tr>
+  </table>
+   
+  <div class="col-md-6">
+    <div class="container">
+      <h6>model</h6>
+      <pre>{{model | json}}</pre>
+    </div>
+  </div>
+  

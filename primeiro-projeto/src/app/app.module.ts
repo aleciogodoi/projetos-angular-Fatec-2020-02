@@ -6,14 +6,16 @@ import { AppComponent } from './app.component';
 import { PrimeiroComponent } from './primeiro/primeiro.component';
 import { SegundoComponent } from './segundo/segundo.component';
 import { TerceiroComponent } from './terceiro/terceiro.component';
-import { FormsModule } from '@angular/forms';​
+import { FormsModule } from '@angular/forms';
+import { ExemplosBindingComponent } from './exemplos-binding/exemplos-binding.component';​
 
 @NgModule({
   declarations: [
     AppComponent,
     PrimeiroComponent,
     SegundoComponent,
-    TerceiroComponent
+    TerceiroComponent,
+    ExemplosBindingComponent
   ],
   imports: [
     BrowserModule,
