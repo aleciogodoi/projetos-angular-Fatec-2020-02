@@ -1,0 +1,31 @@
+<h1>Exemplo diretiva *ngFor</h1>
+
+<div>
+    <ul>
+        <li *ngFor="let item of listaCompra">
+            {{item}}
+        </li>
+    </ul>
+    <table class="table table-striped table-bordered">
+        <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+        <tr *ngFor="let item of listaCompra" >
+            <td>{{item}}</td>
+            <td>100</td>
+        </tr>
+    </table>
+
+    <table class="table table-striped table-bordered">
+        <tr>
+            <th>Nome</th>
+            <th>email</th>
+        </tr>
+        <tr *ngFor="let item of model" >
+            <td>{{item.nome}}</td>
+            <td>{{item.email}}</td>
+        </tr>
+    </table>
+
+</div>
