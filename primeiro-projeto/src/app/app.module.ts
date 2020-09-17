@@ -9,7 +9,9 @@ import { TerceiroComponent } from './terceiro/terceiro.component';
 import { FormsModule } from '@angular/forms';
 import { ExemplosBindingComponent } from './exemplos-binding/exemplos-binding.component';
 import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
-import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.component';​
+import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.component';
+import { CursosComponent } from './cursos/cursos.component';​
+import { CursosService } from './cursos.service';
 
 @NgModule({
   declarations: [
@@ -19,14 +21,15 @@ import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.componen
     TerceiroComponent,
     ExemplosBindingComponent,
     DiretivaNgifComponent,
-    DiretivaNgforComponent
+    DiretivaNgforComponent,
+    CursosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [CursosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
