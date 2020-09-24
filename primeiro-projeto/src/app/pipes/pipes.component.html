@@ -1,0 +1,38 @@
+<h2>Pipes</h2>
+<h3>Datas</h3>
+<p>Data sem formatação {{data}}</p>
+<p>Data com formatação (date) {{data | date}}</p>
+<p>Data com formatação (shortDate) {{data | date : 'shortDate'}}</p>
+<p>Data com formatação (mediumDate) {{data | date : 'mediumDate'}}</p>
+<p>Data com formatação (longDate) {{data | date : 'longDate'}}</p>
+<p>Data com formatação (dd/MM/yyyy) {{data | date : 'dd/MM/yyyy'}}</p>
+<p>Data com formatação (dd/MMM/yyyy) {{data | date : 'dd/MMM/yyyy'}}</p>
+<p>Data com formatação (dd/MMMM/yyyy) {{data | date : 'dd/MMMM/yyyy'}}</p>
+
+<h3>Números</h3>
+<p>Numero PI {{pi}}</p>
+<p>Numero PI {{pi | number : '3.0-5'}}</p>
+<p>Numero PI {{pi | number : '1.0-1'}}</p>
+<p>Numero e {{e}}</p>
+<p>Numero e {{e | number : '1.0-2'}}</p>
+<p>Numero e {{e | number : '1.0-3'}}</p>
+
+<h3>Percentuais</h3>
+<p>Percentuais a {{a}}</p>
+<p>Percentuais b {{b}}</p>
+<p>Percentuais a {{a | percent : '2.1-2'}}</p>
+<p>Percentuais b {{b | percent : '3.0-2'}}</p>
+
+<h3>Moedas</h3>
+<p>Valor valor[0] {{valor[0]}}</p>
+<p>Valor valor[1] {{valor[1]}}</p>
+
+<p>Valor valor[0] {{valor[0] | currency }}</p>
+<p>Valor valor[0] {{valor[0] | currency : 'BRL'}}</p>
+<p>Valor valor[1] {{valor[1] | currency : 'CAD'}}</p>
+
+<h3>Pipes personalizados</h3>
+<p>{{frase}}</p> 
+<p>{{frase | camelCase}}</p> 
+<p>3999 =  {{3999 | numerosRomanos}}</p> 
+

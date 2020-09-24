@@ -12,6 +12,10 @@ import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.component';
 import { CursosComponent } from './cursos/cursos.component';​
 import { CursosService } from './cursos.service';
+import { PipesComponent } from './pipes/pipes.component';
+import { CamelCasePipe } from './pipes-personalizados/camel-case.pipe';
+import { NumerosRomanosPipe } from './pipes-personalizados/numeros-romanos.pipe';
+import { TestePipePipe } from './pipes-personalizados/teste-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { CursosService } from './cursos.service';
     ExemplosBindingComponent,
     DiretivaNgifComponent,
     DiretivaNgforComponent,
-    CursosComponent
+    CursosComponent,
+    PipesComponent,
+    CamelCasePipe,
+    NumerosRomanosPipe,
+    TestePipePipe
   ],
   imports: [
     BrowserModule,
