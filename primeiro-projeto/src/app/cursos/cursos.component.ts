@@ -24,4 +24,8 @@ export class CursosComponent implements OnInit {
     this.cursosService.delCurso(curso);
   }
 
+  alterarCurso(oldCurso,newCurso){
+    this.cursosService.setCurso(oldCurso,newCurso);
+  }
+
 }

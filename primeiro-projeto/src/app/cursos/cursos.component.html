@@ -3,10 +3,13 @@
     Curso <input type="text" [(ngModel)]="curso">
     <input type="button" value="Novo" (click)="novoCurso(curso)">
     <input type="button" value="Excluir" (click)="excluirCurso(curso)">
+    Old-Curso <input type="text" [(ngModel)]="oldCurso">
+    New-Curso <input type="text" [(ngModel)]="newCurso">
+    <input type="button" value="Alterar" (click)="alterarCurso(oldCurso,newCurso)">
+ 
 </p>
 <ul>
     <li *ngFor="let item of cursos">
         {{item}}
     </li>
 </ul>
-

@@ -25,4 +25,16 @@ export class CursosService {
     if (i>=0)
       this.cursos.splice(i,1);
   }
+
+  // Alteração by Renan
+  setCurso(oldCurso: string, newCurso: string){
+    let i = this.cursos.indexOf(oldCurso);
+    if(i>=0){
+      let j = this.cursos.indexOf(newCurso);
+      if(j<0 && newCurso != null){
+        this.cursos[i] = newCurso;
+      }  
+    }
+  }
+
 }
