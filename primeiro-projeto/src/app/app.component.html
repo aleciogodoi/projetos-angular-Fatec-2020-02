@@ -10,7 +10,6 @@ Nome<input type="text" name="" id="">
 <segundo></segundo>
 <app-terceiro></app-terceiro>
 -->
-
 <!--
 <h1>Bindings - Exemplos</h1>
 <hr>
@@ -22,6 +21,28 @@ Nome<input type="text" name="" id="">
 <hr>
 <app-diretiva-ngfor></app-diretiva-ngfor>
 <app-cursos></app-cursos>
+<app-pipes></app-pipes>
 -->
 
-<app-pipes></app-pipes>
+<div class="container">
+    <nav>
+        <span>Rotas no Angular</span>
+        <a routerLink="/home" routerLinkActive="active">Home</a>
+        <a routerLink="/segunda" routerLinkActive="active">Segunda</a>
+        <a routerLink="/terceira" routerLinkActive="active">Terceira</a>
+        <a routerLink="/quarta" routerLinkActive="active">Quarta</a>
+        <a routerLink="/diretiva-ngif" routerLinkActive="active">Diretiva ngIf</a>
+        <a routerLink="/diretiva-ngfor" routerLinkActive="active">Diretiva ngFor</a>
+        <a routerLink="/cursos" routerLinkActive="active">Cursos</a>
+        <a routerLink="/pipes" routerLinkActive="active">Pipes</a>
+        <a routerLink="/exemplos-bindings" routerLinkActive="active">Exemplos Bindings</a>
+    </nav>
+
+    <section class="components">
+        <router-outlet></router-outlet>
+    </section>
+</div>
+
+
+
+

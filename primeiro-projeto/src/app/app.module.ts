@@ -16,6 +16,12 @@ import { PipesComponent } from './pipes/pipes.component';
 import { CamelCasePipe } from './pipes-personalizados/camel-case.pipe';
 import { NumerosRomanosPipe } from './pipes-personalizados/numeros-romanos.pipe';
 import { TestePipePipe } from './pipes-personalizados/teste-pipe.pipe';
+import { HomeComponent } from './rotas/home/home.component';
+import { PrimeiraComponent } from './rotas/primeira/primeira.component';
+import { SegundaComponent } from './rotas/segunda/segunda.component';
+import { TerceiraComponent } from './rotas/terceira/terceira.component';
+import { QuartaComponent } from './rotas/quarta/quarta.component';
+import { PaginaNaoEncontradaComponent } from './rotas/pagina-nao-encontrada/pagina-nao-encontrada.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +36,13 @@ import { TestePipePipe } from './pipes-personalizados/teste-pipe.pipe';
     PipesComponent,
     CamelCasePipe,
     NumerosRomanosPipe,
-    TestePipePipe
+    TestePipePipe,
+    HomeComponent,
+    PrimeiraComponent,
+    SegundaComponent,
+    TerceiraComponent,
+    QuartaComponent,
+    PaginaNaoEncontradaComponent
   ],
   imports: [
     BrowserModule,
