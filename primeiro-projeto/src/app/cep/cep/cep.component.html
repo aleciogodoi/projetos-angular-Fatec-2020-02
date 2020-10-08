@@ -1,0 +1,37 @@
+<br><br>
+<form #f="ngForm">
+    <div class="form-row">
+        <div class="col-md-3 mb-3">
+            <label for="cep">Cep</label>
+            <input type="text" class="form-control" id="cep" name="cep" placeholder="CEP"
+             ngModel required #cep="ngModel" (blur)="consultaCEP($event.target.value, f)">
+        </div>
+        <div class="col-md-5 mb-5">
+            <label for="logradouro">Logradouro</label>
+            <input type="text" class="form-control" id="logradouro" name="logradouro" placeholder="Logradouro"
+             ngModel #logradouro="ngModel">
+        </div>
+        <div class="col-md-4 mb-4">
+            <label for="complemento">Complemento</label>
+            <input type="text" class="form-control" id="complemento" name="complemento" placeholder="Complemento"
+             ngModel #complemento="ngModel">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-3 mb-3">
+            <label for="bairro">Bairro</label>
+            <input type="text" class="form-control" id="bairro" name="bairro" placeholder="Bairro"
+             ngModel #bairro="ngModel">
+        </div>
+        <div class="col-md-5 mb-5">
+            <label for="cidade">Cidade</label>
+            <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade"
+             ngModel #cidade="ngModel">
+        </div>
+        <div class="col-md-4 mb-4">
+            <label for="estado">Estado</label>
+            <input type="text" class="form-control" id="estado" name="estado" placeholder="Estado"
+             ngModel #estado="ngModel">
+        </div>
+    </div>
+</form>

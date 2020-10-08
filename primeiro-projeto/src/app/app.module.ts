@@ -22,6 +22,10 @@ import { SegundaComponent } from './rotas/segunda/segunda.component';
 import { TerceiraComponent } from './rotas/terceira/terceira.component';
 import { QuartaComponent } from './rotas/quarta/quarta.component';
 import { PaginaNaoEncontradaComponent } from './rotas/pagina-nao-encontrada/pagina-nao-encontrada.component';
+import { DadosComponent } from './dados/dados/dados.component';
+import { CepComponent } from './cep/cep/cep.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DadosService } from './dados/dados.service';
 
 @NgModule({
   declarations: [
@@ -42,14 +46,17 @@ import { PaginaNaoEncontradaComponent } from './rotas/pagina-nao-encontrada/pagi
     SegundaComponent,
     TerceiraComponent,
     QuartaComponent,
-    PaginaNaoEncontradaComponent
+    PaginaNaoEncontradaComponent,
+    DadosComponent,
+    CepComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [CursosService],
+  providers: [CursosService, DadosService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { } 

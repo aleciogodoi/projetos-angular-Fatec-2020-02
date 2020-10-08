@@ -11,7 +11,8 @@ import { PrimeiraComponent } from './rotas/primeira/primeira.component';
 import { QuartaComponent } from './rotas/quarta/quarta.component';
 import { SegundaComponent } from './rotas/segunda/segunda.component';
 import { TerceiraComponent } from './rotas/terceira/terceira.component';
-
+import { DadosComponent } from './dados/dados/dados.component';
+import { CepComponent } from './cep/cep/cep.component';
 
 const routes: Routes = [
   {path:"home", component: HomeComponent},
@@ -23,7 +24,9 @@ const routes: Routes = [
   {path:"diretiva-ngfor", component: DiretivaNgforComponent},
   {path:"cursos", component: CursosComponent},
   {path:"pipes", component: PipesComponent},
-  {path: "exemplos-bindings", component: ExemplosBindingComponent},
+  {path:"exemplos-bindings", component: ExemplosBindingComponent},
+  {path:"dados", component: DadosComponent},
+  {path:"cep", component: CepComponent},
   {path:"", redirectTo: "/home", pathMatch: "full"},
   {path:"**", component: PaginaNaoEncontradaComponent}, 
 ];

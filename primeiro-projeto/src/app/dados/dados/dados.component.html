@@ -1,0 +1,24 @@
+<table class="table table-dark table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Usuário</th>
+            <th>Rua</th>
+            <th>CEP</th>
+            <th>Empresa</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pessoa of dados">
+            <td>{{pessoa.id}}</td>
+            <td>{{pessoa.name}}</td>
+            <td>{{pessoa.email | lowercase}}</td>
+            <td>{{pessoa.username | lowercase }}</td>
+            <td>{{pessoa.address.street}}</td>
+            <td>{{pessoa.address.zipcode}}</td>
+            <td>{{pessoa.company.name}}</td>
+        </tr>
+    </tbody>
+</table>
