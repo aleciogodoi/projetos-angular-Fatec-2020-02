@@ -26,6 +26,9 @@ import { DadosComponent } from './dados/dados/dados.component';
 import { CepComponent } from './cep/cep/cep.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DadosService } from './dados/dados.service';
+import { CepService } from './cep/cep.service';
+import { TempoComponent } from './tempo/tempo.component';
+import { CotacaoComponent } from './cotacao/cotacao.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +51,9 @@ import { DadosService } from './dados/dados.service';
     QuartaComponent,
     PaginaNaoEncontradaComponent,
     DadosComponent,
-    CepComponent
+    CepComponent,
+    TempoComponent,
+    CotacaoComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +61,7 @@ import { DadosService } from './dados/dados.service';
     FormsModule,
     HttpClientModule
   ],
-  providers: [CursosService, DadosService],
+  providers: [CursosService, DadosService, CepService],
   bootstrap: [AppComponent]
 })
 export class AppModule { } 

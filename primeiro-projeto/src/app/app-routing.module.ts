@@ -13,6 +13,8 @@ import { SegundaComponent } from './rotas/segunda/segunda.component';
 import { TerceiraComponent } from './rotas/terceira/terceira.component';
 import { DadosComponent } from './dados/dados/dados.component';
 import { CepComponent } from './cep/cep/cep.component';
+import { CotacaoComponent } from './cotacao/cotacao.component';
+import { TempoComponent } from './tempo/tempo.component';
 
 const routes: Routes = [
   {path:"home", component: HomeComponent},
@@ -27,6 +29,8 @@ const routes: Routes = [
   {path:"exemplos-bindings", component: ExemplosBindingComponent},
   {path:"dados", component: DadosComponent},
   {path:"cep", component: CepComponent},
+  {path:"cotacao", component: CotacaoComponent},
+  {path:"tempo", component: TempoComponent},
   {path:"", redirectTo: "/home", pathMatch: "full"},
   {path:"**", component: PaginaNaoEncontradaComponent}, 
 ];

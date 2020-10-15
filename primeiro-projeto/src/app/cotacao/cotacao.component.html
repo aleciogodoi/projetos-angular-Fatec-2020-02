@@ -1,0 +1,38 @@
+<br>
+<div id="card">
+    <header>
+      <h5>Cotação</h5>
+      <input type="date" [(ngModel)]="dataCotacao" />
+      <button (click)="getCotacao(dataCotacao)">
+        Pesquisar
+      </button>
+    </header>
+    <div class="content">
+     
+      <tbody>
+        <tr>
+          <h5>Compra</h5>
+          <td>{{ getCotacaoCompra() | currency: "BRL":true:"1.1-4" }}</td>
+        </tr>
+        <hr />
+        <tr>
+          <h5>Venda</h5>
+          <td>{{ getCotacaoVenda() | currency: "BRL":true:"1.1-4" }}</td>
+        </tr>
+        <hr />
+        <tr>
+          <h5>Data</h5>
+          <td>{{ getDataHoraVenda() | date: "dd/MM/yyyy" }}</td>
+        </tr>
+        <hr />
+        <tr>
+          <h5>Horário</h5>
+          <td>
+            {{ getDataHoraVenda() | date: "HH" }}:{{
+              getDataHoraVenda() | date: "mm"
+            }}
+          </td>
+        </tr>
+      </tbody>
+    </div>
+  </div>
