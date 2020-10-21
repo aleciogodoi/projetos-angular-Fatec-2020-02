@@ -61,7 +61,7 @@ import { CotacaoComponent } from './cotacao/cotacao.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [CursosService, DadosService, CepService],
+  providers: [CursosService, DadosService, CepService, CotacaoComponent, TempoComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { } 
