@@ -6,7 +6,7 @@ import { HttpClient } from "@angular/common/http";
 })
 export class TempoService {
 
-  private apiurlCotacao = "https://api.hgbrasil.com/weather?format=json-cors";
+  private apiurlCotacao = "https://api.hgbrasil.com/weather?format=json-cors&woeid=433591";
   constructor(private http: HttpClient) { }
 
   getTempo(){

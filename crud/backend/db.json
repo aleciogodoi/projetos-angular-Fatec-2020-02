@@ -1,0 +1,28 @@
+{
+  "cursos": [
+    {
+      "id": 1,
+      "descricao": "JAVA Básico",
+      "duracao": 20,
+      "preco": "100.55"
+    },
+    {
+      "id": 2,
+      "descricao": "C#",
+      "duracao": 20,
+      "preco": 250.49
+    },
+    {
+      "id": 3,
+      "descricao": "Javascript",
+      "duracao": 20,
+      "preco": 50.49
+    },
+    {
+      "id": "4",
+      "descricao": "Cobol",
+      "duracao": "30",
+      "preco": "140.98"
+    }
+  ]
+}
