@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { CursoService } from './../curso.service';
+import { Curso } from './../curso.modelo';
+
 @Component({
   selector: 'app-curso-read',
   templateUrl: './curso-read.component.html',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CursoReadComponent implements OnInit {
 
-  constructor() { }
+  cursos: Curso[];
+  displayColumns = ["id", "descricao", "duracao", "preco"];
+  constructor(private cursoService: CursoService) { }
 
   ngOnInit() {
+    this.cursoService.read().subscribe(cursos => {
+      this.cursos = cursos;
+    })
   }
-
 }
