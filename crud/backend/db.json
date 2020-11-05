@@ -11,6 +11,18 @@
       "descricao": "C#",
       "duracao": 20,
       "preco": 250.49
+    },
+    {
+      "id": 3,
+      "descricao": "JavaScript",
+      "duracao": 15,
+      "preco": 50.49
+    },
+    {
+      "id": 4,
+      "descricao": "Cobol",
+      "duracao": 40,
+      "preco": 250.34
     }
   ]
 }

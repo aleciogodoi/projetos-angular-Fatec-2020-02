@@ -11,7 +11,7 @@ import { Curso } from './../curso.modelo';
 export class CursoReadComponent implements OnInit {
 
   cursos: Curso[];
-  displayColumns = ["id", "descricao", "duracao", "preco"];
+  displayedColumns = ["id", "descricao", "duracao", "preco"];
   constructor(private cursoService: CursoService) { }
 
   ngOnInit() {
