@@ -1,1 +1,23 @@
-<p>curso-create works!</p>
+<mat-card>
+    <mat-card-title>Novo Curso</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Descrição"
+                [(ngModel)]="curso.descricao" name="descricao">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Duração" 
+                [(ngModel)]="curso.duracao" name="duracao">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preço R$" 
+                [(ngModel)]="curso.preco" name="preco">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createCurso()" color="primary">
+        Salvar
+    </button>
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

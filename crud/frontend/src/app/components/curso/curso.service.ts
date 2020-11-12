@@ -14,5 +14,9 @@ export class CursoService {
   read(): Observable<Curso[]> {
     return this.http.get<Curso[]>(this.url);
   }
+
+  create(curso: Curso): Observable<Curso> {
+    return this.http.post<Curso>(this.url, curso);
+  }
   
 }

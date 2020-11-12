@@ -23,6 +23,18 @@
       "descricao": "Cobol",
       "duracao": 40,
       "preco": 250.34
+    },
+    {
+      "descricao": "Modelagem de Dados",
+      "duracao": "20",
+      "preco": "101.93",
+      "id": 5
+    },
+    {
+      "descricao": "React Avançado",
+      "duracao": "40",
+      "preco": "200.65",
+      "id": 6
     }
   ]
 }
