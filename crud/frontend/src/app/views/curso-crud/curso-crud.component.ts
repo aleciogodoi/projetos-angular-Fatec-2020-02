@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-curso-crud',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CursoCrudComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  navigateToCursoCreate() {
+    this.router.navigate(['/curso/create']);
   }
 
 }
