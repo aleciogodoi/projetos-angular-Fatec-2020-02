@@ -19,4 +19,14 @@ export class CursoService {
     return this.http.post<Curso>(this.url, curso);
   }
   
+  readById(id: String):  Observable<Curso> {
+    const url =`${this.url}/${id}`;
+    return this.http.get<Curso>(url);
+  }
+
+  update(curso: Curso): Observable<Curso> {
+    const url = `${this.url}/${curso.id}`;
+    return this.http.put<Curso>(url, curso);
+  }
+
 }

@@ -20,9 +20,9 @@
     },
     {
       "id": 4,
-      "descricao": "Cobol",
-      "duracao": 40,
-      "preco": 250.34
+      "descricao": "Cobol - Parte I",
+      "duracao": "44",
+      "preco": "251.34"
     },
     {
       "descricao": "Modelagem de Dados",
