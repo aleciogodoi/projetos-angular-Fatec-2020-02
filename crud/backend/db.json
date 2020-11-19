@@ -31,10 +31,22 @@
       "id": 5
     },
     {
-      "descricao": "React Avançado",
-      "duracao": "40",
-      "preco": "200.65",
+      "descricao": "Linguagem C - Iniciante",
+      "duracao": "20",
+      "preco": "30",
       "id": 6
+    },
+    {
+      "descricao": "Linguagem C - Intermediario",
+      "duracao": "30",
+      "preco": "120.54",
+      "id": 7
+    },
+    {
+      "descricao": "Linguagem C - Avançado",
+      "duracao": "50",
+      "preco": "120.98",
+      "id": 8
     }
   ]
 }

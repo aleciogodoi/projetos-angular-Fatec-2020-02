@@ -29,4 +29,9 @@ export class CursoService {
     return this.http.put<Curso>(url, curso);
   }
 
+  delete(id: String):  Observable<Curso> {
+    const url =`${this.url}/${id}`;
+    return this.http.delete<Curso>(url);
+  }
+
 }
