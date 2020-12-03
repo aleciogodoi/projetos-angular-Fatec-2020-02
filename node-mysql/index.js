@@ -48,3 +48,16 @@ router.get('/cursos/:id?', (req, res) => {
         filter = 'Where id ='+parseInt(req.params.id);
         execSqlQuery("Select * From Curso "+filter, res);
 });
+
+// Rota para exclusão
+router.delete('/cursos/:id', (req, res) => {
+    execSqlQuery('Delete From Curso Where id='+parseInt(req.params.id), res);
+});
+
+// Insert 
+router.post('/cursos',(req, res) => {
+    const descricao = req.body.descricao.substring(0, 120);
+    const duracao = parseInt(req.body.duracao); 
+    const preco = parseDouble(req.body.preco);
+    execSqlQuery(`Insert into Curso (descricao, duracao, preco) Values (${descricao},${duracao},${preco})`)
+});
