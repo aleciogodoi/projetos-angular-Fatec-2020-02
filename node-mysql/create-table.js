@@ -31,7 +31,7 @@ function createTable(conn) {
 
 function insert(conn) {
     const sql = "INSERT INTO Produto (NomeProduto, Preco) Values " +
-                "('Geladeira',1070.65),('Fogão 4 bocas',568.76)";
+                "('Geladeira',1070.65),('Fogão 4 bocas',568.76), ('Celular',800.35),('Fogão 6 bocas',1238.26)";
         conn.query(sql, function(error, results, fields){
             if(error)
                 return console.log(error);
